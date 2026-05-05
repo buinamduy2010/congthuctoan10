@@ -1,16 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <title>Công thức Toán 10</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sổ Tay Công Thức Toán 10</title>
+    <!-- Nhúng MathJax để hiển thị công thức Toán -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f4f7f6; }
+        header { text-align: center; background: #2c3e50; color: white; padding: 1rem; border-radius: 8px; margin-bottom: 20px; }
+        .section { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        h2 { color: #2980b9; border-bottom: 2px solid #2980b9; padding-bottom: 5px; }
+        .formula-box { background: #eef2f7; padding: 15px; border-left: 5px solid #3498db; margin: 10px 0; overflow-x: auto; }
+        footer { text-align: center; margin-top: 50px; color: #7f8c8d; font-size: 0.9em; }
+    </style>
 </head>
 <body>
 
-<h1>📘 Công thức Toán lớp 10</h1>
+<header>
+    <h1>TỔNG HỢP CÔNG THỨC TOÁN 10</h1>
+    <p>Hỗ trợ học tập và tra cứu nhanh</p>
+</header>
 
-<p>Xin chào! Đây là website đầu tiên của tôi 🎉</p>
+<!-- Mục 1: Đại số -->
+<div class="section">
+    <h2>1. Tam thức bậc hai</h2>
+    <p>Xét tam thức bậc hai $f(x) = ax^2 + bx + c \quad (a \neq 0)$</p>
+    <div class="formula-box">
+        <strong>Biệt thức:</strong> $\Delta = b^2 - 4ac$ <br>
+        <strong>Định lý về dấu của tam thức bậc hai:</strong> <br>
+        Nếu $\Delta < 0$, thì $f(x)$ luôn cùng dấu với hệ số $a$ với mọi $x \in \mathbb{R}$.
+    </div>
+</div>
 
-<h2>Phương trình bậc hai</h2>
-<p>x = (-b ± √(b² - 4ac)) / 2a</p>
+<!-- Mục 2: Hệ thức lượng trong tam giác -->
+<div class="section">
+    <h2>2. Hệ thức lượng trong tam giác</h2>
+    <div class="formula-box">
+        <strong>Định lý Cosin:</strong>
+        $$a^2 = b^2 + c^2 - 2bc \cdot \cos A$$
+        <strong>Định lý Sin:</strong>
+        $$\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R$$
+        <strong>Diện tích tam giác (Heron):</strong>
+        $$S = \sqrt{p(p-a)(p-b)(p-c)}$$
+    </div>
+</div>
+
+<!-- Mục 3: Phương pháp tọa độ -->
+<div class="section">
+    <h2>3. Phương pháp tọa độ trong mặt phẳng</h2>
+    <p>Cho hai điểm $A(x_A, y_A)$ và $B(x_B, y_B)$:</p>
+    <div class="formula-box">
+        <strong>Độ dài đoạn thẳng AB:</strong>
+        $$AB = \sqrt{(x_B - x_A)^2 + (y_B - y_A)^2}$$
+        <strong>Phương trình tổng quát của đường thẳng:</strong>
+        $$ax + by + c = 0$$
+    </div>
+</div>
+
+<footer>
+    <p>Dự án được thực hiện bởi <strong>buinamduy2010</strong> trên GitHub</p>
+</footer>
 
 </body>
 </html>
