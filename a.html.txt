@@ -1,0 +1,149 @@
+!DOCTYPE html
+html lang=vi
+head
+    meta charset=UTF-8
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titleSổ Tay Công Thức Toán 10title
+    !-- Nhúng thư viện MathJax để hiển thị công thức toán đẹp hơn --
+    script src=httpspolyfill.iov3polyfill.min.jsfeatures=es6script
+    script id=MathJax-script async src=httpscdn.jsdelivr.netnpmmathjax@3es5tex-mml-chtml.jsscript
+    
+    style
+        root {
+            --primary-color #2c3e50;
+            --accent-color #3498db;
+            --bg-color #f9f9f9;
+        }
+        body {
+            font-family 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height 1.6;
+            margin 0;
+            display flex;
+            background-color var(--bg-color);
+        }
+         Thanh menu bên trái 
+        .sidebar {
+            width 250px;
+            background var(--primary-color);
+            color white;
+            height 100vh;
+            position fixed;
+            padding 20px;
+            overflow-y auto;
+        }
+        .sidebar h2 {
+            font-size 1.2rem;
+            border-bottom 2px solid var(--accent-color);
+            padding-bottom 10px;
+        }
+        .sidebar ul {
+            list-style none;
+            padding 0;
+        }
+        .sidebar ul li {
+            margin 15px 0;
+        }
+        .sidebar ul li a {
+            color #bdc3c7;
+            text-decoration none;
+            transition 0.3s;
+        }
+        .sidebar ul li ahover {
+            color white;
+            padding-left 10px;
+        }
+         Nội dung chính bên phải 
+        .main-content {
+            margin-left 290px;
+            padding 40px;
+            max-width 900px;
+        }
+        .chapter-section {
+            background white;
+            padding 30px;
+            margin-bottom 40px;
+            border-radius 10px;
+            box-shadow 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 { color var(--primary-color); }
+        h3 { 
+            color var(--accent-color); 
+            border-left 4px solid var(--accent-color);
+            padding-left 10px;
+        }
+        .formula-box {
+            background #f0f7ff;
+            border 1px solid #d1e9ff;
+            padding 15px;
+            border-radius 5px;
+            margin 15px 0;
+            text-align center;
+            font-size 1.1rem;
+        }
+    style
+head
+body
+
+    div class=sidebar
+        h2Toán Lớp 10h2
+        ul
+            lia href=#chuong1Chương 1 Mệnh đề - Tập hợpali
+            lia href=#chuong2Chương 2 Bất phương trình bậc nhất hai ẩnali
+            lia href=#chuong3Chương 3 Hàm số bậc hai và đồ thịali
+            lia href=#chuong4Chương 4 Hệ thức lượng trong tam giácali
+        ul
+    div
+
+    div class=main-content
+        h1Tổng Hợp Công Thức Toán Học Lớp 10h1
+        pHệ thống lại toàn bộ kiến thức quan trọng theo từng chương học.p
+
+        !-- CHƯƠNG 1 --
+        section id=chuong1 class=chapter-section
+            h3Chương 1 Mệnh đề & Tập hợph3
+            pb1. Tập hợp conb ( A subset B Leftrightarrow forall x (x in A Rightarrow x in B) )p
+            pb2. Các phép toán tập hợpbp
+            ul
+                liGiao ( A cap B = {x mid x in A text{ và } x in B} )li
+                liHợp ( A cup B = {x mid x in A text{ hoặc } x in B} )li
+                liHiệu ( A setminus B = {x mid x in A text{ và } x notin B} )li
+            ul
+        section
+
+        !-- CHƯƠNG 2 --
+        section id=chuong2 class=chapter-section
+            h3Chương 2 Bất phương trình bậc nhất hai ẩnh3
+            pDạng tổng quát ( ax + by  c ) (hoặc ( , le, ge )).p
+            div class=formula-box
+                Miền nghiệm là nửa mặt phẳng không chứa bờ (hoặc chứa bờ) sau khi thay tọa độ điểm thử.
+            div
+        section
+
+        !-- CHƯƠNG 3 --
+        section id=chuong3 class=chapter-section
+            h3Chương 3 Hàm số bậc haih3
+            pHàm số ( y = ax^2 + bx + c quad (a neq 0) )p
+            pbTọa độ đỉnh Ibp
+            div class=formula-box
+                ( Ileft( -frac{b}{2a} ; -frac{Delta}{4a} right) )
+            div
+            pbTrục đối xứngb ( x = -frac{b}{2a} )p
+        section
+
+        !-- CHƯƠNG 4 --
+        section id=chuong4 class=chapter-section
+            h3Chương 4 Hệ thức lượng trong tam giách3
+            pb1. Định lý Cosinbp
+            div class=formula-box
+                ( a^2 = b^2 + c^2 - 2bc cdot cos A )
+            div
+            pb2. Định lý Sinbp
+            div class=formula-box
+                ( frac{a}{sin A} = frac{b}{sin B} = frac{c}{sin C} = 2R )
+            div
+        section
+
+    div
+
+body
+html
